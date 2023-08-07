@@ -15,8 +15,7 @@ body {
   height: 36px;
   padding: 0px 19px 0px 16px;
 }
-
-.header__location {
+.header .header__location {
   display: flex;
   align-items: center;
   gap: 17px;
