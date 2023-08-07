@@ -29,12 +29,11 @@ body {
 .section-1 {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #F6F6F6;
+  text-align: center;
 }
 .section-1 h1 {
-  font-size: 24px;
   font-weight: 700;
   margin-top: 39px;
 }
@@ -44,8 +43,7 @@ body {
   color: #353535;
   margin: 0px;
 }
-
-.btn {
+.section-1 .btn {
   border-radius: 25px;
   border: none;
   background: linear-gradient(175deg, #9356DC 0%, #FF79DA 100%);
