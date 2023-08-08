@@ -66,4 +66,90 @@ body {
     }
 }
 
+.Fonctionnement {
+    padding-left:25px;
+    padding-right: 25px;
+    margin-top: 48px;
+    margin-bottom: 68px;
 
+    h2 {
+        margin-bottom: 26px;
+        margin-top: 0px;
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        gap: 36px;
+        padding: 0px;
+    }
+
+    & li {
+        background-color: #F6F6F6;
+        padding:20px 20px;
+        border-radius:15px;
+        height: 32px;
+        align-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        font-weight: 500;
+
+        .icon {
+            color: #7E7E7E;
+            margin-right: 20px;
+        }
+
+        .icon__purple {
+            color: #9356DC;
+        }
+    }
+
+    & .numeration {
+        background-color: #9356DC;
+        color:white;
+        display:grid;
+        width:24px;
+        height: 24px;
+        place-items: center;
+        border-radius: 50px;
+        position:relative;
+        left:-30px;
+    }
+}
+
+.Restaurants {
+    background-color: #F6F6F6;
+    padding: 0px 25px 0px 25px;
+
+    & .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-color: white;
+
+        img {
+            object-fit: cover;
+            border-radius: 15px 15px 0px 0px;
+            height: 180px;
+        }
+
+        & .card__contain {
+            padding: 16px 13px 12px 13px;
+        }
+
+        & .tittle {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0px;
+        }
+
+        & .sub__tittle {
+            font-size: 17px;
+            font-weight: 300;
+            margin: 0px;
+        } 
+        
+    }
+}
