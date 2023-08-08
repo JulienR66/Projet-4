@@ -123,6 +123,12 @@ body {
     background-color: #F6F6F6;
     padding: 0px 25px 0px 25px;
 
+    & .cards__container {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
     & .card {
         display: flex;
         flex-direction: column;
