@@ -107,11 +107,16 @@ body {
 .Restaurants {
   background-color: #F6F6F6;
   padding: 0px 25px 0px 25px;
+  display: flow-root;
+}
+.Restaurants h2 {
+  margin-top: 54px;
 }
 .Restaurants .cards__container {
   display: flex;
   flex-direction: column;
   gap: 18px;
+  margin-bottom: 66px;
 }
 .Restaurants .card {
   display: flex;
@@ -136,6 +141,31 @@ body {
   font-size: 17px;
   font-weight: 300;
   margin: 0px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 25px;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #353535;
+}
+.footer .footer__contain {
+  display: flex;
+  flex-direction: column;
+}
+.footer p {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 7px;
+  margin-top: 0px;
+}
+.footer i {
+  margin-right: 11px;
+}
+.footer .size__txt {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
