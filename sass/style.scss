@@ -147,6 +147,16 @@ body {
             height: 180px;
         }
 
+        .card__new {
+            height: 29px;
+            width: 80px;
+            background-color:#99E2D0;
+            display:grid;
+            place-items: center;
+            color:#008766;
+            border-radius:2px;
+        }
+
         & .card__contain {
             padding: 16px 13px 12px 13px;
         }
@@ -162,6 +172,11 @@ body {
             font-weight: 300;
             margin: 0px;
         } 
+
+        & .card__like {
+            width: 22px;
+            height: 21px;
+        }
         
     }
 }

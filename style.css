@@ -129,6 +129,15 @@ body {
   border-radius: 15px 15px 0px 0px;
   height: 180px;
 }
+.Restaurants .card .card__new {
+  height: 29px;
+  width: 80px;
+  background-color: #99E2D0;
+  display: grid;
+  place-items: center;
+  color: #008766;
+  border-radius: 2px;
+}
 .Restaurants .card .card__contain {
   padding: 16px 13px 12px 13px;
 }
@@ -141,6 +150,10 @@ body {
   font-size: 17px;
   font-weight: 300;
   margin: 0px;
+}
+.Restaurants .card .card__like {
+  width: 22px;
+  height: 21px;
 }
 
 .footer {
