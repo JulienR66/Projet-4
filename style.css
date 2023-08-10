@@ -113,6 +113,10 @@ body {
 .Restaurants h2 {
   margin-top: 54px;
 }
+.Restaurants a {
+  text-decoration: none;
+  color: black;
+}
 .Restaurants .cards__container {
   display: flex;
   flex-direction: column;
@@ -134,8 +138,12 @@ body {
   height: 29px;
   width: 80px;
   background-color: #99E2D0;
-  display: grid;
+  display: flex;
   place-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 38px;
+  margin-top: 10px;
   color: #008766;
   border-radius: 2px;
 }
