@@ -152,6 +152,10 @@ body {
   font-weight: 300;
   margin: 0px;
 }
+.Restaurants .card .fa-heart {
+  width: 22px;
+  height: 21px;
+}
 
 .footer {
   display: flex;
