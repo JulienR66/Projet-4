@@ -129,7 +129,7 @@ body {
   border-radius: 15px;
   background-color: white;
 }
-.Restaurants .card img {
+.Restaurants .card__img {
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
   height: 180px;
