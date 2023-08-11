@@ -154,7 +154,7 @@ body {
             height: 180px;
         }
 
-        .card__new {
+        &__new {
             height: 29px;
             width: 80px;
             background-color:#99E2D0;
@@ -168,29 +168,38 @@ body {
             border-radius:2px;
         }
 
-        & .card__contain {
+        &__contain {
             padding: 16px 13px 12px 13px;
         }
 
-        & .tittle {
+        &__tittle {
             font-size: 18px;
             font-weight: 700;
             margin: 0px;
         }
 
-        & .sub__tittle {
+        &__sub-tittle {
             font-size: 17px;
             font-weight: 300;
             margin: 0px;
         } 
 
-        
+        &__heart-container {
+            display: flex;
+            position: relative;
 
-        .fa-heart {
-            width: 22px;
-            height: 21px;
+            .heart {
+                position: absolute;
+                right: 10px;
+                top: -32px;
 
+                &__like {
+                    display: none;
+                }
+            }
         }
+
+        
         
         
     }
