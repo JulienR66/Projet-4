@@ -18,6 +18,7 @@
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   margin-top: 32px;
+  font-weight: 400;
 }
 .section__menu .heart {
   width: 22px;
@@ -33,6 +34,9 @@
   top: -55px;
   border-radius: 25px 25px 0px 0px;
   padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 .section__menu .menu h2 {
   font-size: 16px;
@@ -48,9 +52,35 @@
 .section__menu .menu__contain {
   display: flex;
   flex-direction: column;
+  gap: 12px;
 }
 .section__menu .menu__card {
   background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  position: relative;
+  gap: 5px;
+  box-shadow: 0.9px 1.3px 2.4px rgba(0, 0, 0, 0.06), 4px 12px 19px rgba(0, 0, 0, 0.12);
+}
+.section__menu .menu__card p {
+  margin: 0px;
+}
+.section__menu .menu__card__price {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.section__menu .menu__card__title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.section__menu .menu__card__subtitle {
+  font-size: 15px;
+  font-weight: 300;
 }
 
 body {
