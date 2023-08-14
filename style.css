@@ -1,3 +1,40 @@
+.header__restaurants {
+  display: flex;
+  justify-content: center;
+  padding: 14px 17px 13px 17px;
+  position: relative;
+}
+.header__restaurants__icon {
+  position: absolute;
+  left: 17px;
+}
+
+.section__menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section__menu h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+  margin-top: 32px;
+  margin-bottom: 40px;
+}
+.section__menu .heart {
+  width: 22px;
+  height: 21px;
+}
+.section__menu__img {
+  object-fit: cover;
+  height: 275px;
+}
+.section__menu .menu {
+  background-color: #F6F6F6;
+  position: relative;
+  top: -55px;
+  border-radius: 25px 25px 0px 0px;
+}
+
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
