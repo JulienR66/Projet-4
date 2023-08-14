@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  background-color: #F6F6F6;
 }
 .section__menu h1 {
   font-family: "Shrikhand", cursive;
@@ -94,8 +95,6 @@
   height: 50px;
   color: white;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  margin-bottom: 57px;
-  margin-top: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
