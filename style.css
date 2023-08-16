@@ -19,11 +19,8 @@
   font-family: "Shrikhand", cursive;
   font-size: 28px;
   margin-top: 32px;
+  margin-right: 24px;
   font-weight: 400;
-}
-.section__menu .heart {
-  width: 22px;
-  height: 21px;
 }
 .section__menu__img {
   object-fit: cover;
@@ -49,6 +46,15 @@
   margin: 0px;
   padding-bottom: 7px;
   width: 40px;
+}
+.section__menu .menu__title_container {
+  position: relative;
+  display: flex;
+}
+.section__menu .menu__heart_liked {
+  position: relative;
+  left: -22px;
+  display: none;
 }
 .section__menu .menu__contain {
   display: flex;
