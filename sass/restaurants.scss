@@ -61,9 +61,15 @@
 
         }
 
+        &__heart_unliked {
+            position: relative;
+            bottom: -17px;
+        }
+
         &__heart_liked {
             position: relative;
             left: -22px;
+            bottom: -17px;
             display: none;
             
         }
