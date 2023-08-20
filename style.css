@@ -81,9 +81,6 @@
   margin: 0px;
 }
 .section__menu .menu__card__price {
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
   font-size: 15px;
   font-weight: 700;
 }
@@ -94,6 +91,8 @@
 .section__menu .menu__card__subtitle {
   font-size: 15px;
   font-weight: 300;
+  display: flex;
+  justify-content: space-between;
 }
 .section__menu .menu__btn__container {
   display: flex;

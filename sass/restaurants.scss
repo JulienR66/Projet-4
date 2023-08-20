@@ -98,9 +98,6 @@
             }
 
             &__price {
-                position: absolute;
-                bottom: 15px;
-                right: 15px;
                 font-size: 15px;
                 font-weight: 700;
             }
@@ -113,6 +110,8 @@
             &__subtitle {
                 font-size: 15px;
                 font-weight: 300;
+                display: flex;
+                justify-content: space-between;
             }
         }
 
