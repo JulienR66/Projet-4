@@ -75,6 +75,7 @@
   padding: 15px;
   position: relative;
   gap: 5px;
+  height: 38px;
   box-shadow: 0.9px 1.3px 2.4px rgba(0, 0, 0, 0.06), 4px 12px 19px rgba(0, 0, 0, 0.12);
 }
 .section__menu .menu__card p {
@@ -93,6 +94,12 @@
   font-weight: 300;
   display: flex;
   justify-content: space-between;
+}
+.section__menu .menu__card__select__btn {
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  display: none;
 }
 .section__menu .menu__btn__container {
   display: flex;
