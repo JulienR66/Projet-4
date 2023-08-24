@@ -48,9 +48,10 @@
   padding-bottom: 7px;
   width: 40px;
 }
-.section__menu .menu__title_container {
-  position: relative;
+.section__menu .menu__text_container {
   display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 .section__menu .menu__heart_unliked {
   position: relative;
@@ -80,10 +81,15 @@
 }
 .section__menu .menu__card p {
   margin: 0px;
+  text-overflow: ellipsis;
+  overflow-x: hidden;
+  white-space: nowrap;
 }
 .section__menu .menu__card__price {
   font-size: 15px;
   font-weight: 700;
+  margin-top: 38px;
+  margin-right: 15px;
 }
 .section__menu .menu__card__title {
   font-size: 18px;
@@ -95,10 +101,13 @@
   display: flex;
   justify-content: space-between;
 }
-.section__menu .menu__card__select__btn {
+.section__menu .menu__card__select__btn_container {
   position: absolute;
   right: -1px;
   top: -1px;
+  display: flex;
+}
+.section__menu .menu__card__select__btn {
   display: none;
 }
 .section__menu .menu__btn__container {
