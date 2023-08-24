@@ -48,6 +48,9 @@
   padding-bottom: 7px;
   width: 40px;
 }
+.section__menu .menu__title_container {
+  display: flex;
+}
 .section__menu .menu__text_container {
   display: flex;
   flex-direction: column;
