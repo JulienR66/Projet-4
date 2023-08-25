@@ -101,8 +101,6 @@
 .section__menu .menu__card__subtitle {
   font-size: 15px;
   font-weight: 300;
-  display: flex;
-  justify-content: space-between;
 }
 .section__menu .menu__card__select__btn_container {
   position: absolute;
