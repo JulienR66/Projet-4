@@ -68,16 +68,24 @@
         &__heart_unliked {
             position: relative;
             bottom: -17px;
+            opacity: 1;
+            z-index: 2;
+
+            &:hover {
+                opacity: 0;
+            }
         }
 
         &__heart_liked {
             position: relative;
             left: -22px;
             bottom: -17px;
-            display: none;
+            opacity: 0;
+            z-index: 2;
 
-            &:active {
-                display: block;
+            &:hover {
+                opacity: 1;
+                transition: all 0.3s;
             }
         }
 
