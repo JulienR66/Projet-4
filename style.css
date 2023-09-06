@@ -66,6 +66,9 @@
   bottom: -17px;
   display: none;
 }
+.section__menu .menu__heart_liked:active {
+  display: block;
+}
 .section__menu .menu__contain {
   display: flex;
   flex-direction: column;
@@ -301,6 +304,9 @@ body {
 }
 .Restaurants .card__heart-container .heart__like {
   display: none;
+}
+.Restaurants .card__heart-container .heart__like:active {
+  display: block;
 }
 
 .footer {

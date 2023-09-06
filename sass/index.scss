@@ -198,6 +198,10 @@ body {
 
                 &__like {
                     display: none;
+
+                    &:active {
+                        display: block;
+                    }
                 }
             }
         }

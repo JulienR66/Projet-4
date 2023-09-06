@@ -75,7 +75,10 @@
             left: -22px;
             bottom: -17px;
             display: none;
-            
+
+            &:active {
+                display: block;
+            }
         }
 
         &__contain {
