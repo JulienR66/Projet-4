@@ -142,12 +142,13 @@
 
             &__select__btn {
                 opacity: 0;
-                margin-right: -59px;
+                width: 5px;
 
                 &:hover {
                     opacity: 1;
                     margin-right: 0px;
                     transition: 0.1s;
+                    width: 60px;
                 }
             }
         }
