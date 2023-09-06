@@ -141,7 +141,14 @@
             }
 
             &__select__btn {
-                display: none;
+                opacity: 0;
+                margin-right: -59px;
+
+                &:hover {
+                    opacity: 1;
+                    margin-right: 0px;
+                    transition: 0.1s;
+                }
             }
         }
 
