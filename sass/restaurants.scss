@@ -33,6 +33,27 @@
         height: 275px;
     }
 
+    input#heart-toggle {
+        cursor: pointer;
+        position: relative;
+        right: 1px;
+        bottom: -38px;
+        width: 26px;
+        height: 26px;
+        margin: 0px;
+        z-index: 100;
+        opacity: 0;
+    }
+
+    input:checked ~ .heart-regular-liked {
+        opacity: 1;
+      }
+
+    .heart-regular {
+        width: 0px;
+        height: 0px;
+    }
+
     .menu {
         background-color: #F6F6F6;
         position: relative;
@@ -67,26 +88,18 @@
 
         &__heart_unliked {
             position: relative;
-            bottom: -17px;
+            bottom: -40px;
             opacity: 1;
             z-index: 2;
-
-            &:hover {
-                opacity: 0;
-            }
         }
 
         &__heart_liked {
             position: relative;
-            left: -22px;
-            bottom: -17px;
+            left: -26px;
+            bottom: -40px;
             opacity: 0;
-            z-index: 2;
-
-            &:hover {
-                opacity: 1;
-                transition: all 0.3s;
-            }
+            z-index: 50;
+            transition: opacity 750ms ease-in-out, background-size 750ms ease-in-out;
         }
 
         &__contain {
