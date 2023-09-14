@@ -232,10 +232,21 @@ body {
 }
 
 .Fonctionnement {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding: 0px 25px 0px 25px;
   margin-top: 48px;
   margin-bottom: 68px;
+}
+@media screen and (min-width: 1024px) {
+  .Fonctionnement {
+    padding: 50px 100px 50px 100px;
+    margin-bottom: 30px;
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .Fonctionnement {
+    padding: 50px 180px 50px 180px;
+  }
 }
 .Fonctionnement h2 {
   margin-bottom: 26px;
@@ -248,6 +259,12 @@ body {
   gap: 36px;
   padding: 0px;
 }
+@media screen and (min-width: 1024px) {
+  .Fonctionnement ol {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
 .Fonctionnement li {
   background-color: #F6F6F6;
   padding: 20px 20px;
@@ -258,6 +275,11 @@ body {
   flex-wrap: wrap;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
   font-weight: 500;
+}
+@media screen and (min-width: 1024px) {
+  .Fonctionnement li {
+    width: 100%;
+  }
 }
 .Fonctionnement li .icon {
   color: #7E7E7E;
@@ -281,7 +303,6 @@ body {
 .Restaurants {
   background-color: #F6F6F6;
   padding: 0px 25px 0px 25px;
-  display: flow-root;
 }
 .Restaurants h2 {
   margin-top: 54px;
@@ -306,6 +327,7 @@ body {
     gap: none;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1330px) {
