@@ -1,4 +1,4 @@
-@import "restaurants.scss";
+@import "./restaurants.scss";
 
 
 body {
@@ -196,36 +196,33 @@ body {
         &__heart-container {
             display: flex;
             position: relative;
+            justify-content: flex-end;
 
-            .heart {
-                position: absolute;
-                right: 10px;
-                top: -32px;
-                opacity: 1;
-                z-index: 2;
-
-                &:hover {
-                    opacity: 0;
-                }
-
-                &__like {
-                    position: absolute;
-                    right: 10px;
-                    top: -32px;
-                    opacity: 0;
-                    z-index: 2;
-
-                    &:hover {
-                        opacity: 1;
-                        transition: all 0.3s;
-                    }
-                }
+            & i {
+                font-size: 1.5rem;
             }
-        }
+              
+            & .fas {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background: -webkit-linear-gradient(#9356DC 25%, #FF79DA 100%);
+            }
 
-        
-        
-        
+            &:hover .fas {
+                transition: all 150ms ease-in;
+                display: inline;
+                opacity: 1;
+            }
+
+            &:hover .far {
+                transition: all 150ms ease-in;
+                opacity: 0;
+              }
+        }
     }
 }
 

@@ -33,27 +33,7 @@
         height: 275px;
     }
 
-    input#heart-toggle {
-        cursor: pointer;
-        position: relative;
-        right: 1px;
-        bottom: -38px;
-        width: 26px;
-        height: 26px;
-        margin: 0px;
-        z-index: 100;
-        opacity: 0;
-    }
-
-    input:checked ~ .heart-regular-liked {
-        opacity: 1;
-      }
-
-    .heart-regular {
-        width: 0px;
-        height: 0px;
-    }
-
+   
     .menu {
         background-color: #F6F6F6;
         position: relative;
@@ -78,6 +58,37 @@
 
         &__title_container {
             display: flex;
+            align-items: baseline;
+        }
+
+        &__heart_container {
+            position: relative;
+            height: 24px;
+
+            & i {
+                font-size: 1.5rem;
+            }
+
+            & .fas {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+                background: -webkit-linear-gradient(#9356DC 25%, #FF79DA 100%);
+            }
+
+            &:hover .fas {
+                transition: all 150ms ease-in;
+                display: inline;
+                opacity: 1;
+            }
+
+            &:hover .far {
+                transition: all 150ms ease-in;
+                opacity: 0;
+              }
         }
 
         &__text_container {
@@ -85,23 +96,7 @@
             flex-direction: column;
             width: 80%;
         }
-
-        &__heart_unliked {
-            position: relative;
-            bottom: -40px;
-            opacity: 1;
-            z-index: 2;
-        }
-
-        &__heart_liked {
-            position: relative;
-            left: -26px;
-            bottom: -40px;
-            opacity: 0;
-            z-index: 50;
-            transition: opacity 750ms ease-in-out, background-size 750ms ease-in-out;
-        }
-
+       
         &__contain {
             display: flex;
             flex-direction: column;

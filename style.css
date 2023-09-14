@@ -27,24 +27,6 @@
   object-fit: cover;
   height: 275px;
 }
-.section__menu input#heart-toggle {
-  cursor: pointer;
-  position: relative;
-  right: 1px;
-  bottom: -38px;
-  width: 26px;
-  height: 26px;
-  margin: 0px;
-  z-index: 100;
-  opacity: 0;
-}
-.section__menu input:checked ~ .heart-regular-liked {
-  opacity: 1;
-}
-.section__menu .heart-regular {
-  width: 0px;
-  height: 0px;
-}
 .section__menu .menu {
   background-color: #F6F6F6;
   position: relative;
@@ -68,25 +50,37 @@
 }
 .section__menu .menu__title_container {
   display: flex;
+  align-items: baseline;
+}
+.section__menu .menu__heart_container {
+  position: relative;
+  height: 24px;
+}
+.section__menu .menu__heart_container i {
+  font-size: 1.5rem;
+}
+.section__menu .menu__heart_container .fas {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC 25%, #FF79DA 100%);
+}
+.section__menu .menu__heart_container:hover .fas {
+  transition: all 150ms ease-in;
+  display: inline;
+  opacity: 1;
+}
+.section__menu .menu__heart_container:hover .far {
+  transition: all 150ms ease-in;
+  opacity: 0;
 }
 .section__menu .menu__text_container {
   display: flex;
   flex-direction: column;
   width: 80%;
-}
-.section__menu .menu__heart_unliked {
-  position: relative;
-  bottom: -40px;
-  opacity: 1;
-  z-index: 2;
-}
-.section__menu .menu__heart_liked {
-  position: relative;
-  left: -26px;
-  bottom: -40px;
-  opacity: 0;
-  z-index: 50;
-  transition: opacity 750ms ease-in-out, background-size 750ms ease-in-out;
 }
 .section__menu .menu__contain {
   display: flex;
@@ -332,27 +326,28 @@ body {
 .Restaurants .card__heart-container {
   display: flex;
   position: relative;
+  justify-content: flex-end;
 }
-.Restaurants .card__heart-container .heart {
+.Restaurants .card__heart-container i {
+  font-size: 1.5rem;
+}
+.Restaurants .card__heart-container .fas {
   position: absolute;
-  right: 10px;
-  top: -32px;
-  opacity: 1;
-  z-index: 2;
-}
-.Restaurants .card__heart-container .heart:hover {
   opacity: 0;
+  cursor: pointer;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background: -webkit-linear-gradient(#9356DC 25%, #FF79DA 100%);
 }
-.Restaurants .card__heart-container .heart__like {
-  position: absolute;
-  right: 10px;
-  top: -32px;
-  opacity: 0;
-  z-index: 2;
-}
-.Restaurants .card__heart-container .heart__like:hover {
+.Restaurants .card__heart-container:hover .fas {
+  transition: all 150ms ease-in;
+  display: inline;
   opacity: 1;
-  transition: all 0.3s;
+}
+.Restaurants .card__heart-container:hover .far {
+  transition: all 150ms ease-in;
+  opacity: 0;
 }
 
 .footer {
