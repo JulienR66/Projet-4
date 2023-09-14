@@ -354,7 +354,6 @@ body {
 }
 @media screen and (min-width: 1024px) {
   .Restaurants .card {
-    max-width: 490px;
     min-width: 340px;
   }
 }
@@ -378,6 +377,8 @@ body {
 }
 .Restaurants .card__contain {
   padding: 16px 13px 12px 13px;
+  display: flex;
+  justify-content: space-between;
 }
 .Restaurants .card__tittle {
   font-size: 18px;
