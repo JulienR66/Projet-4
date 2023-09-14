@@ -1,4 +1,5 @@
-
+@import "./mixins.scss";
+@import "./variables.scss";
 
 .header__restaurants {
     display: flex;
@@ -70,13 +71,13 @@
             }
 
             & .fas {
-                position: absolute;
+                position:absolute;
                 opacity: 0;
-                cursor: pointer;
-                background-clip: text;
-                -webkit-background-clip: text;
-                color: transparent;
-                background: -webkit-linear-gradient(#9356DC 25%, #FF79DA 100%);
+                @include gradient (180deg);
+                cursor:pointer;
+                background-clip:text;
+                -webkit-background-clip:text;
+                color:transparent;
             }
 
             &:hover .fas {
