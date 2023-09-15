@@ -27,7 +27,8 @@
   object-fit: cover;
   height: 275px;
 }
-.section__menu .menu {
+
+.menu {
   background-color: #F6F6F6;
   position: relative;
   top: -55px;
@@ -37,7 +38,7 @@
   flex-direction: column;
   gap: 40px;
 }
-.section__menu .menu h2 {
+.menu h2 {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -48,18 +49,18 @@
   padding-bottom: 7px;
   width: 40px;
 }
-.section__menu .menu__title_container {
+.menu__title_container {
   display: flex;
   align-items: baseline;
 }
-.section__menu .menu__heart_container {
+.menu__heart_container {
   position: relative;
   height: 24px;
 }
-.section__menu .menu__heart_container i {
+.menu__heart_container i {
   font-size: 1.5rem;
 }
-.section__menu .menu__heart_container .fas {
+.menu__heart_container .fas {
   position: absolute;
   opacity: 0;
   background: #9356DC;
@@ -69,77 +70,107 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-.section__menu .menu__heart_container:hover .fas {
+.menu__heart_container:hover .fas {
   transition: all 150ms ease-in;
   display: inline;
   opacity: 1;
 }
-.section__menu .menu__heart_container:hover .far {
+.menu__heart_container:hover .far {
   transition: all 150ms ease-in;
   opacity: 0;
 }
-.section__menu .menu__text_container {
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-}
-.section__menu .menu__contain {
+.menu__contain {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.section__menu .menu__card {
+
+.card_menu {
   background-color: white;
   border-radius: 20px;
   display: flex;
-  flex-direction: column;
-  padding: 15px;
-  position: relative;
-  gap: 5px;
-  height: 38px;
+  flex-direction: row;
+  width: 100%;
+  max-width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  animation-fill-mode: both;
+  animation: itemappear 0.8s;
   box-shadow: 0.9px 1.3px 2.4px rgba(0, 0, 0, 0.06), 4px 12px 19px rgba(0, 0, 0, 0.12);
 }
-.section__menu .menu__card p {
+.card_menu__text_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card_menu p {
   margin: 0px;
   text-overflow: ellipsis;
   overflow-x: hidden;
   white-space: nowrap;
 }
-.section__menu .menu__card__price {
+.card_menu__price {
   font-size: 15px;
   font-weight: 700;
-  margin-top: 38px;
-  margin-right: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 15px;
+  margin-right: 10px;
 }
-.section__menu .menu__card__title {
+.card_menu__title {
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.section__menu .menu__card__subtitle {
+.card_menu__subtitle {
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.section__menu .menu__card__select__btn_container {
-  position: absolute;
-  right: -1px;
-  top: -1px;
+.card_menu__check_done {
+  width: 4rem;
+  transition: 0.5s;
+  margin-right: -4rem;
+  background-color: #99E2D0;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.section__menu .menu__card__select__btn {
-  opacity: 0;
-  width: 5px;
+.card_menu:hover .card_menu__check_done {
+  margin-right: 0rem;
 }
-.section__menu .menu__card__select__btn:hover {
-  opacity: 1;
-  margin-right: 0px;
-  transition: 0.1s;
-  width: 60px;
+.card_menu__check_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #FFF;
+  border-radius: 5rem;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
 }
-.section__menu .menu__btn__container {
+.card_menu:hover .card_menu__check_wrap {
+  transform: rotate(0);
+}
+.card_menu__check_icon {
+  color: #99E2D0;
+}
+
+.btn__container {
   display: flex;
   justify-content: center;
 }
-.section__menu .menu__btn {
+.btn__container_btn {
   border-radius: 25px;
   border: none;
   background-image: linear-gradient(0deg, #9356DC, #FF79DA);
@@ -150,12 +181,20 @@
   font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
-.section__menu .menu__btn:hover {
+.btn__container_btn:hover {
   transform: scale(1.1);
   opacity: 0.8;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
 }
 
+@keyframes itemappear {
+  0% {
+    transform: translateY(3rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
