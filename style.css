@@ -262,12 +262,6 @@
   align-items: center;
   opacity: 0.9;
 }
-.loader img {
-  position: absolute;
-  top: 282px;
-  min-width: 190px;
-  max-width: 350px;
-}
 .loader__circle_1 {
   width: 7rem;
   height: 7rem;
