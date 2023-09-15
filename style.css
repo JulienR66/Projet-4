@@ -18,8 +18,11 @@
 .section__menu {
   display: flex;
   flex-direction: column;
-  position: relative;
-  background-color: #F6F6F6;
+}
+@media screen and (min-width: 1024px) {
+  .section__menu {
+    align-items: center;
+  }
 }
 .section__menu h1 {
   font-family: "Shrikhand", cursive;
@@ -39,6 +42,23 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+  height: 1143px;
+}
+@media screen and (min-width: 1024px) {
+  .menu {
+    max-width: 1055px;
+    min-width: 800px;
+  }
+}
+@media screen and (min-width: 1330px) {
+  .menu {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 338px) {
+  .menu {
+    height: 1181px;
+  }
 }
 .menu h2 {
   font-size: 16px;
@@ -54,6 +74,11 @@
 .menu__title_container {
   display: flex;
   align-items: baseline;
+}
+@media screen and (min-width: 1024px) {
+  .menu__title_container {
+    justify-content: center;
+  }
 }
 .menu__heart_container {
   position: relative;
@@ -187,6 +212,20 @@
   transform: scale(1.1);
   opacity: 0.8;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  transition: all 0.5s ease-in-out;
+}
+
+.height_special {
+  height: 1218px;
+}
+@media screen and (max-width: 344px) {
+  .height_special {
+    height: 1259px;
+  }
+}
+
+.footer_page {
+  margin-top: -54px;
 }
 
 @keyframes itemappear {
@@ -257,6 +296,7 @@ body {
   font-size: 16px;
 }
 .section-1 .btn:hover {
+  transform: scale(1.1);
   opacity: 0.8;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
   transition: all 0.5s ease-in-out;
