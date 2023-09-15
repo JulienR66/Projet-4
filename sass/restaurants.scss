@@ -40,7 +40,7 @@
     }
 }
     .menu {
-        background-color: #F6F6F6;
+        background-color: $background-color;
         position: relative;
         top: -55px;
         border-radius: 25px 25px 0px 0px;
@@ -69,7 +69,7 @@
             font-weight: 300;
             line-height: normal;
             text-transform: uppercase;
-            border-bottom: 3px solid #99E2D0;
+            border-bottom: 3px solid $tertiary-color;
             margin: 0px;
             padding-bottom: 7px;
             width: 40px;
@@ -122,7 +122,7 @@
     }
 
     .card_menu {
-            background-color: white;
+            background-color: $color-white;
             border-radius: 20px;
             display: flex;
             flex-direction: row;
@@ -182,7 +182,7 @@
                 width: 4rem;
                 transition: 0.5s;
                 margin-right: -4rem;
-                background-color: #99E2D0;
+                background-color: $tertiary-color;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -209,7 +209,7 @@
             }
 
             &__check_icon {
-                color: #99E2D0;
+                color: $tertiary-color;
             }
         }
 
@@ -221,7 +221,7 @@
         &_btn {
             border-radius: 25px;
             border: none;
-            background-image:linear-gradient(0deg,#9356DC,#FF79DA);
+            background-image:linear-gradient(0deg,$primary-color,$secondary-color);
             width: 186px;
             height: 50px;
             color: white;
