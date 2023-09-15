@@ -9,6 +9,12 @@
   left: 17px;
 }
 
+.header_img {
+  height: 276px;
+  object-fit: cover;
+  width: 100%;
+}
+
 .section__menu {
   display: flex;
   flex-direction: column;
@@ -22,10 +28,6 @@
   margin-right: 24px;
   font-weight: 400;
   margin-bottom: 0px;
-}
-.section__menu__img {
-  object-fit: cover;
-  height: 275px;
 }
 
 .menu {
